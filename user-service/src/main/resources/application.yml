@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: User Service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: "ThisIsASecureKeyWithMoreThan32Characters!ThisIsASecureKeyWithMoreThan32Characters!ThisIsASecureKeyWithMoreThan32Characters!"
+    expiration-ms: 86400000
+
