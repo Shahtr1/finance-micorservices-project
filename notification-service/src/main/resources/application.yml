@@ -1,0 +1,14 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: notification-service
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 587
+    username: 427d7b172e8a75
+    password: 50d97be8c68567
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
