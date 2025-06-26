@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class NotificationListener {
 
-    @KafkaListener(topics = "financing-offers", groupId = "notification-group")
+    @KafkaListener(topics = "enriched-financing-offers", groupId = "notification-group")
     public void onOffer(FinancingOfferedEvent event) {
         // Log simulated notification
         System.out.println("📧 Email to supplier " + event.getSupplierId());
