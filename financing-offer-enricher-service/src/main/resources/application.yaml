@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: financing-offer-enricher
+  kafka:
+    bootstrap-servers: localhost:9092
+    streams:
+      application-id: financing-offer-enricher-app
+      default-key-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+      default-value-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+    consumer:
+      auto-offset-reset: earliest
